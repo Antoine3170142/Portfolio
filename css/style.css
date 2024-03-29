@@ -546,3 +546,16 @@ details summary:hover {
 details[open] .bubble-content {
     display: flex; /* Affiche le contenu lorsque le volet est ouvert */
 }
+
+.big-text {
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: #07567e;
+}
+
+.help-icon{
+    width: 25px;
+    height: auto; 
+    margin-left: 10px; 
+}
