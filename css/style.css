@@ -599,3 +599,8 @@ footer{
 }
 
 .close:hover { background: #00d9ff; }
+
+.projectDetails{
+    margin: 0;
+    padding-top: 50px;
+}
