@@ -1,606 +1,615 @@
-
 /* Chaque commentaire décrit la ou les lignes suivantes, du code. */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    margin: 0;
-    padding-top: 50px;
-    background-color: #e9f1f8;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 50px;
+  background-color: #e9f1f8;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #07567e;
-    padding: 10px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #07567e;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
 .text {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .navbar .profile {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .profile img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 .navbar li {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #fff;
-    position: relative;
-    font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-size: 25px;
 }
 
 .navbar a:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
 }
 
 .content {
-    padding: 20px;
-    scroll-margin-top: 55px;
+  padding: 20px;
+  scroll-margin-top: 55px;
 }
 
-h1, h2 {
-    color: #07567e;
+h1,
+h2 {
+  color: #07567e;
 }
 
-.download-btn, .contact-button {
-    background-color: #07567e;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+.download-btn,
+.contact-button {
+  background-color: #07567e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-.download-btn:hover, .contact-button:hover {
-    background-color: #3093b1;
+.download-btn:hover,
+.contact-button:hover {
+  background-color: #3093b1;
 }
 
-.contact-section, .about-section {
-    margin-bottom: 20px;
+.contact-section,
+.about-section {
+  margin-bottom: 20px;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .skills {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .txtskills {
-    text-align: center;
+  text-align: center;
 }
 
 .skill {
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 /* Ce sélecteur cible tous les éléments ayant la classe 'skill', à l'exception du dernier élément de cette classe. */
 .skill:not(:last-child) {
-    /* Ajoute une bordure droite d'une largeur de 1.3 pixels avec une couleur noire (#000). */
-    border-right: 1.3px solid #000;
-    
-    /* Ajoute un espacement (padding) à droite de 50 pixels à chaque élément, sauf le dernier. */
-    padding-right: 50px;
+  /* Ajoute une bordure droite d'une largeur de 1.3 pixels avec une couleur noire (#000). */
+  border-right: 1.3px solid #000;
+
+  /* Ajoute un espacement (padding) à droite de 50 pixels à chaque élément, sauf le dernier. */
+  padding-right: 50px;
 }
 
 .skills-table {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .skill-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .progress {
-    width: 100%;
-    height: 15px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
+  width: 100%;
+  height: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
 
-    /* Applique une ombre à la boîte (box-shadow) avec les propriétés suivantes :
+  /* Applique une ombre à la boîte (box-shadow) avec les propriétés suivantes :
     - 'inset' indique que l'ombre est enfoncée à l'intérieur de la boîte.
     - Les valeurs numériques '0 2px 4px' spécifient le décalage horizontal, la distance verticale et le flou de l'ombre.
     - 'rgba(0, 0, 0, 0.1)' définit la couleur de l'ombre en utilisant des valeurs RGBA (rouge, vert, bleu, alpha), où l'alpha (0.1) représente la transparence de l'ombre. */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .progress-bar {
-    height: 100%;
-    border-radius: 8px;
-    background-color: #3093b1;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #3093b1;
 
-    /* Applique une transition à la propriété 'width' avec les paramètres suivants :
+  /* Applique une transition à la propriété 'width' avec les paramètres suivants :
     - '0.6s' spécifie la durée de la transition en secondes.
     - 'ease-in-out' indique une fonction de minutage qui commence lentement, accélère au milieu, puis ralentit à la fin. */
-    transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
 }
 
 .barlogo {
-    /* Définit la largeur à 50% de son conteneur moins 20 pixels de marge. */
-    width: calc(50% - 20px);
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Définit la largeur à 50% de son conteneur moins 20 pixels de marge. */
+  width: calc(50% - 20px);
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .barlogo img {
-    /* Définit l'affichage comme un bloc. */
-    display: block;
+  /* Définit l'affichage comme un bloc. */
+  display: block;
 
-    /* Définit une marge nulle en haut et en bas, et une marge automatique à gauche et à droite. */
-    margin: 0 auto 15px;
-    border-radius: 50%;
-    padding: 3px;
+  /* Définit une marge nulle en haut et en bas, et une marge automatique à gauche et à droite. */
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  padding: 3px;
 }
 
 .barProgression {
-    text-align: center;
+  text-align: center;
 }
 
 .text-with-image {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .image {
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-right: 20px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-right: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .grille-skill {
-    display: grid;
+  display: grid;
 
-    /* Crée une grille avec des colonnes répétées automatiquement, ajustant la largeur entre 120 pixels et 1 fraction d'espace disponible. */
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  /* Crée une grille avec des colonnes répétées automatiquement, ajustant la largeur entre 120 pixels et 1 fraction d'espace disponible. */
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 
-    gap: 10px;
-    margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .skill-set p {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
 
-    /* Définit la taille de police à 0.9 em (relative à la taille de police parente). */
-    font-size: 0.9em;
+  /* Définit la taille de police à 0.9 em (relative à la taille de police parente). */
+  font-size: 0.9em;
 }
 
 .section-skills {
-    background: #f9f9f9;
-    padding: 40px 0;
-    text-align: center;
+  background: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .title-skills {
-    /* Définit la taille de police à 2.5 rem (relative à la taille de la racine du document). */
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
+  /* Définit la taille de police à 2.5 rem (relative à la taille de la racine du document). */
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
 }
 
 .skills-container {
-    display: flex;
-    justify-content: space-around;
-    /* Permet aux éléments flexibles de passer à la ligne lorsque l'espace est insuffisant. */
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  /* Permet aux éléments flexibles de passer à la ligne lorsque l'espace est insuffisant. */
+  flex-wrap: wrap;
 }
 
 .skill-category {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 10px;
-    width: 23%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 23%;
 }
 
 .skill-category h3 {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 15px;
 }
 
 .skill-list {
-    list-style: none;
-    padding: 0;
-    text-align: left;
+  list-style: none;
+  padding: 0;
+  text-align: left;
 }
 
 .skill-list li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #666;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #666;
 }
 
 .skill-list i {
-    width: 25px;
-    text-align: center;
-    color: #4A90E2;
+  width: 25px;
+  text-align: center;
+  color: #4a90e2;
 }
 
 .skill {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .skill label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .progress {
-    background-color: #e1e1e1;
-    border-radius: 5px;
-    height: 20px;
-    width: 50%;
-    overflow: hidden;
-    display: block;
-    margin: 0 auto;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  height: 20px;
+  width: 50%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
 }
 
 .progress-bar {
-    background-color: #4A90E2;
-    height: 100%;
-    border-radius: 5px;
-    line-height: 20px;
-    color: white;
-    text-align: right;
-    padding-right: 10px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
-    transition: width 1s ease-in-out;
+  background-color: #4a90e2;
+  height: 100%;
+  border-radius: 5px;
+  line-height: 20px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
+  transition: width 1s ease-in-out;
 }
 
 .phone-contact {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .phone-number {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .phone-icon {
-    width: 50px;
-    height: auto; 
-    margin-right: 5px; 
+  width: 50px;
+  height: auto;
+  margin-right: 5px;
 }
 
 .experience-bubble {
-    display: flex;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #f9f9f9; 
-    /* Ombre légère pour effet de profondeur */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  /* Ombre légère pour effet de profondeur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bubble-img {
-    width: 450px; 
-    height: 200px; 
-    overflow: hidden;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    margin: 20px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .bubble-img img {
-    width: 100%;
-    height: 100%; 
-    /* Rogner l'image pour s'adapter au conteneur */
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* Rogner l'image pour s'adapter au conteneur */
+  object-fit: cover;
 }
 
 .bubble-text {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .diploma-bubble {
-    display: flex;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .diploma-bubble .bubble-img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .diploma-bubble .bubble-text {
-    flex: 1;
+  flex: 1;
 }
 
 .diploma-bubble p {
-    line-height: 1.5;
-    margin: 0;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .project-bubble {
-    display: inline-block;
-    width: 300px;
-    height: 300px; 
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 20px;
-     /* Ombre de la bulle */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  /* Ombre de la bulle */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-bubble img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    /* Pour s'assurer que l'image ne dépasse pas */
-    max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* Pour s'assurer que l'image ne dépasse pas */
+  max-width: 100%;
 }
 
 .project-bubble p {
-    color: #333;
-    margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .project-bubble .download-btn,
 .project-bubble .contact-button,
 .contact-button,
 .download-btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    background-color: #4A90E2;
-    color: white;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .project-bubble .download-btn:hover,
 .project-bubble .contact-button:hover,
 .contact-button:hover,
 .download-btn:hover {
-    background-color: #357EC7;
+  background-color: #357ec7;
 }
 
 .txtimgprojet {
-    display: inline-block;
-    /* Aligner les bulles au sommet pour les placer correctement */
-    vertical-align: top;
-    margin: 20px;
-    text-align: center;
+  display: inline-block;
+  /* Aligner les bulles au sommet pour les placer correctement */
+  vertical-align: top;
+  margin: 20px;
+  text-align: center;
 }
 
 .projet-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .experience-date {
-    text-align: center;
-    font-size: 1.2em;
-    /* Aligner à droite */
-    float: right;
-    margin-top: 30px; 
+  text-align: center;
+  font-size: 1.2em;
+  /* Aligner à droite */
+  float: right;
+  margin-top: 30px;
 }
 
 .diplome-date {
-    font-size: 1.2em; 
-    float: right;
-    margin-top: 30px; 
+  font-size: 1.2em;
+  float: right;
+  margin-top: 30px;
 }
 
-.imgclick{
-    transition : transform 0.3s;
+.imgclick {
+  transition: transform 0.3s;
 }
 
 .imgclick:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .big-text {
-    font-size: 45px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    color: #07567e;
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  color: #07567e;
 }
 
-footer{
-    text-align: end;
-    margin-right: 30px;
+footer {
+  text-align: end;
+  margin-right: 30px;
 }
 
-.help-icon{
-    width: 25px;
-    height: auto; 
-    margin-left: 10px; 
+.help-icon {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
 }
 
 .project {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .project img {
-    display: block;
-    width: 400px; /* Ajustez la largeur selon vos besoins */
-    height: auto; /* Pour maintenir le ratio */
-    transition: filter 0.5s, transform 0.5s;
-    filter: brightness(70%) blur(2px); /* Appliquer le flou et réduire la luminosité */
+  display: block;
+  width: 400px; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Pour maintenir le ratio */
+  transition: filter 0.5s, transform 0.5s;
+  filter: brightness(70%) blur(2px); /* Appliquer le flou et réduire la luminosité */
 }
 
 .project:hover img {
-    filter: brightness(70%) blur(2px); /* Appliquer le flou et réduire la luminosité */
+  filter: brightness(70%) blur(2px); /* Appliquer le flou et réduire la luminosité */
 }
 
 .project-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    opacity: 0.8; /* Opacité réduite */
-    background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  opacity: 0.8; /* Opacité réduite */
+  background: #000;
 }
 
 .project:hover .project-title {
-    opacity: 0; /* Masque le titre au survol */
+  opacity: 0; /* Masque le titre au survol */
 }
 
 .project-details {
-    position: absolute;
-    top: 50%; /* Centrer verticalement */
-    left: 50%; /* Centrer horizontalement */
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    text-align: center;
-    opacity: 0; /* Caché par défaut */
-    transition: opacity 0.5s;
-    width: 80%; /* Largeur ajustée */
-    max-width: 100%; /* Largeur maximale ajustée */
+  position: absolute;
+  top: 50%; /* Centrer verticalement */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  opacity: 0; /* Caché par défaut */
+  transition: opacity 0.5s;
+  width: 80%; /* Largeur ajustée */
+  max-width: 100%; /* Largeur maximale ajustée */
 }
 
 .project:hover .project-details {
-    opacity: 1; /* Affiche les détails au survol */
+  opacity: 1; /* Affiche les détails au survol */
 }
 
 /* Styles pour la modal */
 .modalDialog {
-    position: fixed;
-    font-family: Arial, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease;
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
 }
 
 .modalDialog:target {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modalDialog > div {
-    width: 60%;
-    height: 60%;
-    position: relative;
-    margin: 10% auto;
-    padding: 20px;
-    background: #fff;
-    overflow: auto;
+  width: 60%;
+  height: 60%;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  background: #fff;
+  overflow: auto;
 }
 
 .modalDialog img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 /* Style pour le bouton de fermeture */
 .close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 35px;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 50%;
-    font-size: 10px; /* Taille de police */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la visibilité */
+  background: #606061;
+  color: #ffffff;
+  line-height: 35px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 10px; /* Taille de police */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ombre pour améliorer la visibilité */
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover {
+  background: #00d9ff;
+}
 
-.projectDetails{
-    margin: 0;
-    padding-top: 50px;
+.projectDetails {
+  margin: 0;
+  padding-top: 50px;
 }
