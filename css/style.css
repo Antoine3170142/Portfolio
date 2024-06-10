@@ -1,5 +1,3 @@
-/* Chaque commentaire décrit la ou les lignes suivantes, du code. */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 html {
@@ -79,6 +77,10 @@ body {
 h1,
 h2 {
   color: #07567e;
+}
+
+h1 {
+  font-size: 2rem; /* Taille réduite pour le titre */
 }
 
 .download-btn,
@@ -671,4 +673,39 @@ footer {
   height: 2px;
   font-weight: bold;
   background-color: #07567e;
+}
+
+/* Diplôme Cards */
+.diploma-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #07567e;
+  padding-bottom: 10px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2em; /* Taille réduite pour le sous-titre */
+  color: #07567e;
+}
+
+.card-header .diplome-date {
+  font-size: 1em;
+  color: #555;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
 }
