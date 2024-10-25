@@ -203,21 +203,22 @@ h1 {
 }
 
 .image {
-  width: 500px;
-  height: 300px;
+  width: 250px; /* Taille ajustée */
+  height: 250px; /* Taille ajustée pour un carré */
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 50%; /* Bord arrondi pour un effet cercle */
   margin-right: 20px;
-  border: 2px solid black;
+  border: 4px solid #ffffff; /* Bordure personnalisée avec couleur assortie au thème */
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Ombre subtile pour un effet de profondeur */
 }
 
 .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Remplissage du conteneur sans déformation */
 }
 
 .grille-skill {
